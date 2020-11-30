@@ -9,11 +9,11 @@ namespace SolicitudPermisos.Model.DTOs
     public class TipoPermisoDTO
     {
         [Required]
-        int TipoPermisoId { get; set; }
+        public int TipoPermisoId { get; set; }
 
         [Required]
         [StringLength(30,
         ErrorMessage = "Descripcion no debe tener mas de 30 caracteres.")]
-        string Descripcion { get; set; }
+        public string Descripcion { get; set; }
     }
 }

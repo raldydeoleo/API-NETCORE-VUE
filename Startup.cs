@@ -32,6 +32,7 @@ namespace SolicitudPermisos
             services.AddDbContext<PermisoDbContext>(options => options.UseSqlServer(connection));
 
             services.AddTransient<IPermisoService, PermisoService>();
+            services.AddTransient<ITipoPermisoService, TipoPermisoService>();
 
             //services.AddControllers();
             // connect vue app - middleware  
